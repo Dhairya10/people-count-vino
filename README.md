@@ -4,7 +4,7 @@ OpenVINO toolkit is used for faster inference.<br>
 RMNet is used here as a backbone model. <br>
 It is a combination of ResNet and MobileNet. 
 
-### OpemVINO Toolkit Setup 
+## OpenVINO Toolkit Setup 
 
 #### Installation Guide <br>
 https://software.intel.com/en-us/openvino-toolkit/choose-download
@@ -13,7 +13,7 @@ https://software.intel.com/en-us/openvino-toolkit/choose-download
 https://software.intel.com/en-us/openvino-toolkit/documentation/get-started
 
 
-### Directory Structure 
+## Directory Structure 
 
 ```
 .
@@ -29,7 +29,7 @@ https://software.intel.com/en-us/openvino-toolkit/documentation/get-started
 `people_count.py` - It is the python program which counts the number of people in a given frame. <br>
 `config.json` - It is a json file which determines the source of the video. You can specify the url to a video file or your webcam id.
 
-### Executing the Program 
+## Executing the Program 
 
 #### Step 1 - 
 Run the following command to activate the OpenVINO environment. <br><br>
@@ -45,7 +45,7 @@ Run the python file by passing in the required command line arguments. <br><br>
 #### NOTE - Make sure that you have properly installed and configured the OpenVINO toolkit before running the python program.
 
 
-### References
+## References
 
 This project borrows heavily from store-aisle-monitor-python project from the Intel IOT Devkit. <br>
 
@@ -54,7 +54,7 @@ Store Aisle Monitor - https://github.com/intel-iot-devkit/store-aisle-monitor-py
 Intel IOT Devkit - https://github.com/intel-iot-devkit
 
 
-### Usage
+## Usage
 
 Intel allows you to use or modify their code if you meet the below mentioned conditions. <br>
 If you want to use any code from this project or from any project of the Intel iot-devkit then you should crefully read the below menioned conditions. <br>
