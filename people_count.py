@@ -1,12 +1,3 @@
-'''
-source /opt/intel/openvino/bin/setupvars.sh -pyver 3.6
-
-python3 people_count.py -m /opt/intel/openvino/deployment_tools/open_model_zoo/tools/downloader/Retail/object_detection/pedestrian/rmnet_ssd/0013/dldt/FP32/person-detection-retail-0013.xml -l /opt/intel/openvino/inference_engine/lib/intel64/libcpu_extension.dylib -d CPU -pt 0.7
-
-* RMNet is used here as a backbone model. It is a combination of ResNet and MobileNet. It is used for faster inference
-
-'''
-
 import os
 import sys
 import time
@@ -65,7 +56,6 @@ def main():
     global is_async_mode
     args = build_argparser().parse_args()
 
-    # assert <condition>,<error message>
     assert os.path.isfile(CONFIG_FILE), "{} file doesn't exist".format(CONFIG_FILE)
     config = json.loads(open(CONFIG_FILE).read())
     for idx, item in enumerate(config['inputs']):
@@ -97,10 +87,6 @@ def main():
     print("To stop the execution press Esc button")
     initial_w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     initial_h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-
-    # cv2.CAP_PROP_FPS does not work with a webcam.
-
-    fps = int(cap.get(cv2.CAP_PROP_FPS))
 
     frame_count = 1
     accumulated_image = np.zeros((initial_h, initial_w), np.uint8)
