@@ -9,7 +9,7 @@ import json
 from inference import Network
 
 isasyncmode = True
-CONFIG_FILE = '../resources/config.json'
+CONFIG_FILE = 'resources/config.json'
 MULTIPLICATION_FACTOR = 5
 
 # To get current working directory
