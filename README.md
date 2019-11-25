@@ -41,11 +41,11 @@ Run the following command to activate the OpenVINO environment. <br><br>
 ### Step 2 - 
 Run the python file by passing in the required command line arguments. <br><br>
 
-LINUX 
+LINUX <br>
 `python3 people_count.py -m path_to_model/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -l /opt/intel/openvino/inference_engine/lib/intel64/libcpu_extension_sse4.so -d CPU -pt 0.7`
 <br>
 
-WINDOWS 
+WINDOWS <br>
 `python3 people_count.py -m path_to_model/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -l path_to_libCPU.dll -d CPU -pt 0.7`
 <br>
 
