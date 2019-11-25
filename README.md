@@ -1,8 +1,8 @@
 # people-count-vino
 This project uses Python and OpenVINO toolkit for counting the number of people in a given frame. <br>
 OpenVINO toolkit is used for faster inference.<br>
-RMNet is used here as a backbone model. <br>
-It is a combination of ResNet and MobileNet. 
+It uses a MobileNetV2-like backbone model. <br>
+
 
 ## OpenVINO Toolkit Setup 
 
