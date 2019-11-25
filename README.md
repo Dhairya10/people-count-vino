@@ -40,8 +40,25 @@ Run the following command to activate the OpenVINO environment. <br><br>
 
 #### Step 2 - 
 Run the python file by passing in the required command line arguments. <br><br>
-`python3 people_count.py -m /opt/intel/openvino/deployment_tools/open_model_zoo/tools/downloader/intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -l /opt/intel/openvino/inference_engine/lib/intel64/libcpu_extension_sse4.so -d CPU -pt 0.7`
+
+### LINUX 
+`python3 people_count.py -m path_to_model/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -l /opt/intel/openvino/inference_engine/lib/intel64/libcpu_extension_sse4.so -d CPU -pt 0.7`
 <br>
+
+### WINDOWS 
+`python3 people_count.py -m path_to_model/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -l path_to_libCPU.dll -d CPU -pt 0.7`
+<br>
+
+#### NOTE - 
+Pass the path of the model to the -m parameter and pass the path of the library based on the device using the -l parameter.
+If you are using Linux, you will find a .so file and If you are using Windows then you will find a .dll file.
+There are separate library files for separate devices. 
+For example, If you are using Linux then you will encounter these library files among others - <br>
+
+`libcpu_extension_sse4.so` <br>
+`libHeteroPlugin.so` <br>
+`libmyriadPlugin.so` <br>
+
 <br>
 #### NOTE - Make sure that you have properly installed and configured the OpenVINO toolkit before running the python program.
 
