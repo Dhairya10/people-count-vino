@@ -27,7 +27,8 @@ https://software.intel.com/en-us/openvino-toolkit/documentation/get-started
 
 ```
 `people_count.py` - It is the python program which counts the number of people in a given frame. <br>
-`config.json` - It is a json file which determines the source of the video. You can specify the url to a video file or your webcam id.
+`inference.py` - It is a python program which contains the OpenVINO specific code. <br>
+`config.json` - It is a json file which determines the source of the video. You can specify the url to a video file or your webcam id. <br>
 
 ## Executing the Program 
 
@@ -39,7 +40,7 @@ Run the following command to activate the OpenVINO environment. <br><br>
 
 #### Step 2 - 
 Run the python file by passing in the required command line arguments. <br><br>
-`python3 people_count.py -m /opt/intel/openvino/deployment_tools/open_model_zoo/tools/downloader/Retail/object_detection/pedestrian/rmnet_ssd/0013/dldt/FP32/person-detection-retail-0013.xml -l /opt/intel/openvino/inference_engine/lib/intel64/libcpu_extension.dylib -d CPU -pt 0.7`
+`python3 people_count.py -m /opt/intel/openvino/deployment_tools/open_model_zoo/tools/downloader/intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -l /opt/intel/openvino/inference_engine/lib/intel64/libcpu_extension_sse4.so -d CPU -pt 0.7`
 <br>
 <br>
 #### NOTE - Make sure that you have properly installed and configured the OpenVINO toolkit before running the python program.
