@@ -43,7 +43,7 @@ Run the python file by passing in the required command line arguments. <br><br>
 
 LINUX <br><br>
 `python3 people_count.py -m path_to_model/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -l /opt/intel/openvino/inference_engine/lib/intel64/libcpu_extension_sse4.so -d CPU -pt 0.7`
-<br>
+<br><br>
 
 WINDOWS <br><br>
 `python3 people_count.py -m path_to_model/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -l path_to_libCPU.dll -d CPU -pt 0.7`
@@ -53,7 +53,7 @@ WINDOWS <br><br>
 Pass the path of the model to the -m parameter and pass the path of the library based on the device using the -l parameter.
 If you are using Linux, you will find a .so file and If you are using Windows then you will find a .dll file.
 There are separate library files for separate devices. 
-For example, If you are using Linux then you will encounter these library files, among others - <br>
+For example, If you are using Linux then you will encounter these library files, among others  <br>
 
 `libcpu_extension_sse4.so` <br>
 `libHeteroPlugin.so` <br>
