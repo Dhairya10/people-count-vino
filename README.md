@@ -53,13 +53,14 @@ Run the python file by passing in the required command line arguments. <br><br>
 Pass the path of the model to the -m parameter and pass the path of the library based on the device using the -l parameter.
 If you are using Linux, you will find a .so file and If you are using Windows then you will find a .dll file.
 There are separate library files for separate devices. 
-For example, If you are using Linux then you will encounter these library files among others - <br>
+For example, If you are using Linux then you will encounter these library files, among others - <br>
 
 `libcpu_extension_sse4.so` <br>
 `libHeteroPlugin.so` <br>
 `libmyriadPlugin.so` <br>
 
 <br>
+
 #### NOTE - Make sure that you have properly installed and configured the OpenVINO toolkit before running the python program.
 
 
