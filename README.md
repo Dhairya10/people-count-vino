@@ -49,7 +49,6 @@ WINDOWS <br><br>
 `python3 people_count.py -m path_to_model/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -l path_to_libCPU.dll -d CPU -pt 0.7`
 <br>
 
-#### NOTE - 
 Pass the path of the model to the -m parameter and pass the path of the library based on the device using the -l parameter.
 If you are using Linux, you will find a .so file and If you are using Windows then you will find a .dll file.
 There are separate library files for separate devices. 
