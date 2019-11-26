@@ -61,6 +61,12 @@ For example, If you are using Linux then you will encounter these library files,
 
 #### NOTE - Make sure that you have properly installed and configured the OpenVINO toolkit before running the python program.
 
+## Docker
+
+To run this program in a docker container. Use the following command. <br><br>
+`docker pull alpha10/open-vino-docker`
+
+
 
 ## References
 
