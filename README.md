@@ -3,6 +3,10 @@ This project uses Python and OpenVINO toolkit for counting the number of people 
 OpenVINO toolkit is used for faster inference.<br>
 It uses a MobileNetV2-like backbone model. <br>
 
+Article related to this project can be found here - <br>
+https://towardsdatascience.com/introduction-to-openvino-897e705a1f0a
+
+
 ## Table Of Contents
 * OpenVINO Toolkit Setup <br>
 * Directory Structure <br>
